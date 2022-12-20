@@ -1,0 +1,50 @@
+@use "./variables.scss" as v;
+@use "sass:color";
+
+.calculator_panel__button {
+    width: 25%;
+    height: 39.65px;
+    background-color: v.$dark-blue;
+    border: 0.933036px solid v.$darkest-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+        background-color: color.change(v.$dark-blue, $alpha: .5);
+    }
+}
+
+.calculator_panel__button___content {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.6629px;
+}
+
+.calculator_panel__button___whiteContent {
+    color: v.$white;
+}
+
+.calculator_panel__button___orangeContent {
+    color: v.$orange;
+}
+
+.calculator_panel__buttonLeftBottom {
+    border-bottom-left-radius: 15px;
+}
+
+.calculator_panel__buttonRightBottom {
+    width: 25%;
+    height: 79.31px;
+    background: v.$orange;
+    border: 0.933036px solid v.$darkest-blue;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+
+    &:active {
+        background-color: color.change(v.$orange, $alpha: .5);
+    }
+}

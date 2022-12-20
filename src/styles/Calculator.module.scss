@@ -1,0 +1,10 @@
+@use "./variables.scss" as v;
+
+.calculator {
+    min-width: 193.14px;
+    max-width: 700px;
+    flex-basis: 80%;
+    background-color: v.$darkest-blue;
+    border: 3px solid v.$darkest-blue;
+    border-radius: 15px;   
+}

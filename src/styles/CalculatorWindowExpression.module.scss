@@ -1,0 +1,27 @@
+@use "./variables.scss" as v;
+
+.calculator_window__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: 4.67px;
+
+    .calculator_window__item___string {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.9955px;
+        line-height: 19px;
+        color: v.$cloudy-white;
+    }
+    
+    .calculator_window__item___result {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32.6562px;
+        line-height: 43px;
+        color: v.$white;
+    }
+}

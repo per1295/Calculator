@@ -1,0 +1,38 @@
+@use "./variables.scss" as v;
+
+.calculator_window {
+    color: v.$white;
+    height: 219.73px;
+    max-height: 219.73px;
+    overflow-y: scroll;
+    width: 100%;
+    padding-right: 16.73px;
+    padding-bottom: 9.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    row-gap: 4.67px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    scrollbar-width: auto;
+    scrollbar-color: v.$white transparent;
+
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: v.$white;
+        border-radius: 10px;
+        border: 3px solid v.$white;
+    }
+}
+
+.calculator_windowOverflow {
+    justify-content: normal !important;
+}
