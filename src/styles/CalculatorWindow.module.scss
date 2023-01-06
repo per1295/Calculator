@@ -3,7 +3,8 @@
 .calculator_window {
     color: v.$white;
     height: 219.73px;
-    max-height: 219.73px;
+    max-height: calc(100% - 198.27px);
+    height: calc(100% - 198.27px);
     overflow-y: scroll;
     width: 100%;
     padding-right: 16.73px;

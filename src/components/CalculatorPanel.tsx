@@ -34,6 +34,7 @@ export default function CalculatorPanel() {
                 arrayOfButtons.map((item, index) => (
                     <CalculatorPanelButton
                     key={index}
+                    tabIndex={index}
                     type={typeof item === "string" ? item : "number"}
                     valueNumber={typeof item === "number" ? item : undefined} />
                 ))

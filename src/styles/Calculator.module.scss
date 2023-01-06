@@ -3,6 +3,8 @@
 .calculator {
     min-width: 193.14px;
     max-width: 700px;
+    max-height: calc(100% - 40px);
+    height: calc(100% - 40px);
     flex-basis: 80%;
     background-color: v.$darkest-blue;
     border: 3px solid v.$darkest-blue;

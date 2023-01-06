@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    outline: none;
 
     &:active {
         background-color: color.change(v.$dark-blue, $alpha: .5);

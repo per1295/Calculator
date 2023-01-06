@@ -18,6 +18,7 @@ import {
 
 interface CalculatorPanelButtonProps {
     type: ButtonType;
+    tabIndex: number;
     valueNumber?: number;
 }
 
@@ -36,7 +37,7 @@ const NaNContent = Object.freeze<INaNContent>({
     equal: "="
 });
 
-const CalculatorPanelButton: FunctionComponent<CalculatorPanelButtonProps> = ({ type, valueNumber }) => {
+const CalculatorPanelButton: FunctionComponent<CalculatorPanelButtonProps> = ({ type, valueNumber, tabIndex }) => {
     const dispatch = useDispatch();
 
     const buttonClassName =
@@ -99,7 +100,7 @@ const CalculatorPanelButton: FunctionComponent<CalculatorPanelButtonProps> = ({ 
     };
 
     return(
-        <button className={buttonClassName} onClick={onClick}>
+        <button className={buttonClassName} onClick={onClick} aria-label={type} tabIndex={tabIndex}>
             <span className={
                 isOrangeContent
                 ?
